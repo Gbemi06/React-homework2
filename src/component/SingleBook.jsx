@@ -1,17 +1,17 @@
-import React from "react";
-import { Card, Col } from "react-bootstrap";
+import { Component } from "react";
+import { Card, Col, ListGroup, ListGroupItem } from "react-bootstrap";
 
-class SingleBook extends React.Component {
+class SingleBook extends Component {
   state = {
     selected: false,
   };
+
   render() {
     return (
       <Col xs={12} md={4} lg={3} className="mb-3">
         <Card
           onClick={() => this.setState({ selected: !this.state.selected })}
           style={{ border: this.state.selected ? "3px solid red" : "none" }}
-          key={this.props.book.asin}
         >
           <Card.Img variant="top" src={this.props.book.img} />
           <Card.Body>

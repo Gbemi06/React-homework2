@@ -5,7 +5,9 @@ import { Component } from "react";
 class BookList extends Component {
   state = {
     searchQuery: "",
+    comments: [],
   };
+
   render() {
     return (
       <Container>
