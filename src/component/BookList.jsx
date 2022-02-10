@@ -29,8 +29,8 @@ class BookList extends Component {
                 .toLowerCase()
                 .includes(this.state.searchQuery.toLowerCase())
             )
-            .map((b) => (
-              <SingleBook book={b} />
+            .map((b, i) => (
+              <SingleBook key={i} book={b} />
             ))}
         </Row>
       </Container>
