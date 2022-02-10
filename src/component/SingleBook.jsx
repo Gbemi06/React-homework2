@@ -7,10 +7,11 @@ class SingleBook extends React.Component {
   };
   render() {
     return (
-      <Col xs={12} md={4} lg={3} key={this.props.key} className="mb-3">
+      <Col xs={12} md={4} lg={3} className="mb-3">
         <Card
           onClick={() => this.setState({ selected: !this.state.selected })}
           style={{ border: this.state.selected ? "3px solid red" : "none" }}
+          key={this.props.book.asin}
         >
           <Card.Img variant="top" src={this.props.book.img} />
           <Card.Body>

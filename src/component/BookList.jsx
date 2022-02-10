@@ -1,8 +1,8 @@
 import SingleBook from "./SingleBook";
 import { Container, Row, Col, Form } from "react-bootstrap";
-import React from "react";
+import { Component } from "react";
 
-class BookList extends React.Component {
+class BookList extends Component {
   state = {
     searchQuery: "",
   };
